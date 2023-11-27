@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGODB_URI;
 }
 
-mongoose.setDriver('useUnifiedTopology', true);
+mongoose.set('useUnifiedTopology', true);
 
 const connect = () => {
     setTimeout(() => mongoose.connect(dbURI, {
