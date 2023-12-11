@@ -1,10 +1,10 @@
 const request = require('request');
 const apiOptions = {
-    server: 'http://localhost:300'
+    server: 'http://localhost:3000'
 }
 
 // Render travel list view
-const renderTravelList = (req, res, respnseBody) => {
+const renderTravelList = (req, res, responseBody) => {
     let message = null;
     let pageTitle = process.env.npm_package_description + ' - Travel';
 

@@ -14,7 +14,7 @@ const apiRouter = require('./app.api/routes/index');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'app_server', 'views/partials'));
+app.set('views', path.join(__dirname, 'app_server', 'views'));
 
   // register handlebars partials
   hbs.registerPartials(path.join(__dirname, 'app_server', 'views/partials'))
